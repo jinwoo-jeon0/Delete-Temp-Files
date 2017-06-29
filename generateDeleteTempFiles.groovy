@@ -18,7 +18,7 @@ pipelineJob('Delete temp files pipeline') {
 					stages {
 						stage('generate') {
 							steps {
-								jobDsl removedJobAction: 'DELETE', removedViewAction: 'DELETE', targets: '**.groovy'
+								jobDsl removedJobAction: 'DELETE', removedViewAction: 'DELETE', targets: 'deleteTempFiles.groovy'
 							}
 						}
 					}
