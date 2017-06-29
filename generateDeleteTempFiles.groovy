@@ -6,7 +6,7 @@ pipelineJob('Delete temp files pipeline') {
 					agent {
 						node {
 							label 'master'
-							customWorkspace 'D:\\Documents\\Jenkins'
+							customWorkspace '${WORKSPACE.replace($/\/$, $/\\/$)}'
 						}
 					}
 
